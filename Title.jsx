@@ -1,6 +1,8 @@
+import "./Title.css";
+
 function Title({ title, desc, price }) {
   return (
-    <div className="Title">
+    <div className="title">
       <h1>{title}</h1>
       <h3>{desc}</h3>
       <p>price : {price}</p>
