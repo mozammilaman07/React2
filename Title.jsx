@@ -1,8 +1,12 @@
-function Title() {
+function Title({ title, desc, price }) {
   return (
     <>
-      <h1>Hello React</h1>
-      <h3>this is a component</h3>
+      <h1>{title}</h1>
+      <h3>{desc}</h3>
+      <p>price : {price}</p>
+      {price >= 15000 && <p>Discount : 5%</p>}
     </>
   );
 }
+
+export default Title;
