@@ -10,7 +10,7 @@ export default function TodoList() {
 
   return (
     <div>
-      <input type="text" placeholder="add a Task" />
+      <input type="text" placeholder="add a Task" value={newTodo} />
       <button>Add</button>
       <h4>Todo List</h4>
     </div>
