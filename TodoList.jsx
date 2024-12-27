@@ -8,6 +8,10 @@ export default function TodoList() {
     console.log("we have to add new task in todo");
   };
 
+  let updateTodoValue = (event) => {
+    console.log(event.target);
+  };
+
   return (
     <div>
       <input type="text" placeholder="add a Task" value={newTodo} />
