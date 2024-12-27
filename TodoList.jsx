@@ -14,7 +14,12 @@ export default function TodoList() {
 
   return (
     <div>
-      <input type="text" placeholder="add a Task" value={newTodo} />
+      <input
+        type="text"
+        placeholder="add a Task"
+        value={newTodo}
+        onChange={updateTodoValue}
+      />
       <button>Add</button>
       <h4>Todo List</h4>
     </div>
