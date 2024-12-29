@@ -9,7 +9,7 @@ export default function TodoList() {
   };
 
   let updateTodoValue = (event) => {
-    console.log(event.target.value);
+    setNewTodo(event.target.value);
   };
 
   return (
