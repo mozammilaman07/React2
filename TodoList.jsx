@@ -20,6 +20,8 @@ export default function TodoList() {
         value={newTodo}
         onChange={updateTodoValue}
       />
+      <br />
+      <br />
       <button>Add</button>
       <h4>Todo List</h4>
     </div>
