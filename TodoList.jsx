@@ -22,7 +22,7 @@ export default function TodoList() {
       />
       <br />
       <br />
-      <button>Add</button>
+      <button onClick={addNewTask}>Add</button>
       <h4>Todo List</h4>
     </div>
   );
