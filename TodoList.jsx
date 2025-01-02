@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function TodoList() {
-  let [todos, setTodos] = useState([task: "sample Task", id: uuid]);
+  let [todos, setTodos] = useState([task: "sample Task", id: uuidv4()]);
   let [newTodo, setNewTodo] = useState("");
 
   let addNewTask = () => {
