@@ -6,7 +6,7 @@ export default function TodoList() {
   let [newTodo, setNewTodo] = useState("");
 
   let addNewTask = () => {
-    setTodos([...todos, newTodo]);
+    setTodos([...todos, { task: newTodo, id: uuidv4() }]);
     setNewTodo("");
   };
 
@@ -30,7 +30,7 @@ export default function TodoList() {
       <br />
       <ul>
         {todos.map((todo) => (
-          <li>{todo}</li>
+          <li key={todo.id}>{todo.task}</li>
         ))}
       </ul>
     </div>
